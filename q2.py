@@ -11,12 +11,12 @@ def remove_adjacent_duplicates(s):
     while adjacent_duplicates_exist(s):
         result = ""
        
-        for i in range(len(s)):
-            if i < len(s)-1 and s[i] == s[i+1]:
-                result += s[i+2:]
+        for k in range(len(s)):
+            if k < len(s)-1 and s[k] == s[k+1]:
+                result += s[k+2:]
                 break
             else:
-                result += s[i]
+                result += s[k]
         s = result
         
     return s

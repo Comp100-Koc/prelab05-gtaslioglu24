@@ -6,7 +6,6 @@ def fill_zeros(a, b):
   
     return a, b
 
-
 def add_binary(a, b):
     '''
     Given two strings perform binary addition and return the result as a string
@@ -23,9 +22,9 @@ def add_binary(a, b):
    
     for i in range(len(a)-1, -1, -1):
       
-        bit_sum = (int(a[i])) + (int(b[i])) + carry
-        result = str(bit_sum % 2) + result
-        carry = bit_sum // 2
+        bitsum = (int(a[i])) + (int(b[i])) + carry
+        result = str(bitsum % 2) + result
+        carry = bitsum // 2
    
     if carry:
        result = '1' + result
